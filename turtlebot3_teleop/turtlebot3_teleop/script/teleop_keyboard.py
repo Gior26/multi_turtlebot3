@@ -145,7 +145,10 @@ def main():
 
     qos = QoSProfile(depth=10)
     node = rclpy.create_node('teleop_keyboard')
-    pub = node.create_publisher(Twist, 'tb3_1/cmd_vel', qos)
+    if(sys.argv[1]):
+        pub = node.create_publisher(Twist, '/'.join([sys.argv[1],'cmd_vel']), qos)
+    else:
+        pub = node.create_publisher(Twist, 'cmd_vel', qos)
 
     status = 0
     target_linear_velocity = 0.0
