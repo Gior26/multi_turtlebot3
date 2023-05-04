@@ -30,10 +30,23 @@ colcon build --parallel-workers 1 --event-handlers console_direct+ --symlink-ins
 
 ## Execute the simulation
 
+**WARNING** If you have already installed turtlebot3\_teleop using the system
+packet manager you need to uninstall it, because it conflicts with our
+modified version.
+
+On Ubuntu:
+
+```bash
+sudo apt remove ros-humble-turtlebot3-teleop
+```
+
+Run the simulation:
+
 ```bash
 source install/local_setup.bash
+export TURTLEBOT3_MODEL=burger
 ros2 launch turtlebot3_gazebo turtlebot3_library.launch.py
-ros2 run turtlebot3_teleop turtlebot3_teleop tb3_1
-ros2 run turtlebot3_teleop turtlebot3_teleop tb3_2
-ros2 run turtlebot3_teleop turtlebot3_teleop tb3_3
+ros2 run turtlebot3_teleop teleop_keyboard tb3_1
+ros2 run turtlebot3_teleop teleop_keyboard tb3_2
+ros2 run turtlebot3_teleop teleop_keyboard tb3_3
 ```
