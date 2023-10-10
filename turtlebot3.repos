@@ -5,11 +5,11 @@ repositories:
     version: ros2-devel
   multi_turtlebot3/turtlebot3_simulations:
     type: git
-    url: https://github.com/Gior26/turtlebot3_simulations.git
+    url: git@github.com:Gior26/turtlebot3_simulations.git
     version: humble-devel
   nav2:
     type: git
-    url: https://github.com/Gior26/navigation2-namespace.git
+    url: git@github.com:Gior26/navigation2-namespace.git
     version: humble
   utils/DynamixelSDK:
     type: git
