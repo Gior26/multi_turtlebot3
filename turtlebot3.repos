@@ -7,10 +7,6 @@ repositories:
     type: git
     url: git@github.com:Gior26/turtlebot3_simulations.git
     version: humble-devel
-  nav2:
-    type: git
-    url: git@github.com:Gior26/navigation2-namespace.git
-    version: humble
   utils/DynamixelSDK:
     type: git
     url: https://github.com/ROBOTIS-GIT/DynamixelSDK.git
