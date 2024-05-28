@@ -5,7 +5,7 @@ repositories:
     version: ros2-devel
   multi_turtlebot3/turtlebot3_simulations:
     type: git
-    url: git@github.com:Gior26/turtlebot3_simulations.git
+    url: https://github.com/Gior26/turtlebot3_simulations.git
     version: humble-devel
   utils/DynamixelSDK:
     type: git
@@ -21,9 +21,9 @@ repositories:
     version: ros2-devel
   battery_services:
     type: git
-    url: git@github.com:Gior26/battery_services.git
+    url: https://github.com/Gior26/battery_services.git
     version: master
   gazebo_ros_batteries:
     type: git
-    url: git@github.com:Gior26/gazebo_ros_batteries.git
+    url: https://github.com/Gior26/gazebo_ros_batteries.git
     version: master
